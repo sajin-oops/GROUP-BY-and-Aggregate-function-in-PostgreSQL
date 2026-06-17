@@ -231,7 +231,7 @@ GROUP BY
 
 
 
-SELECT AVG(e.salary) AS Average_salary,d.department_name FROM employees e INNER JOIN departments D ON e.department_id = d.department_id GROUP BY e.department_id,d.department_name ;
+SELECT ROUND(AVG(e.salary)) AS Average_salary,d.department_name FROM employees e INNER JOIN departments D ON e.department_id = d.department_id GROUP BY e.department_id,d.department_name ;
 
 
 
